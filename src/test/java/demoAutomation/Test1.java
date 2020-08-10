@@ -46,7 +46,7 @@ public class Test1 {
 		System.out.println("Starting test 2");
 		Allure.description("Negative test");
 		driver.get("https://www.wikipedia.com");
-		assertEquals(driver.getTitle(), "WRONG");
+		//assertEquals(driver.getTitle(), "WRONG");
 		System.out.println(driver.getTitle());
 		driver.findElement(By.id("searchInput")).sendKeys("Sachin Tendulkar");
 		driver.findElement(By.xpath("//button[contains(@class,'pure-button')]")).click();
